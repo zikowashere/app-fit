@@ -1,0 +1,22 @@
+<section fxFlex.xs="100%" class="sign-up" >
+<form   class ="form-class" fxLayout="column" fxLayoutAlign="center " #f="ngForm" (ngSubmit)="onSubmit(f)" id="formulaire">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Email" #userEmail name="email" ngModel email required>
+    <mat-error> E-mail invalid</mat-error>
+  </mat-form-field>
+  
+  <mat-form-field class="example-full-width">
+    <input type="password" matInput placeholder="Your password" #userPwd name="password" ngModel minlength="6" password required>
+  <mat-error> password invalid</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="mettez svp votre date d'anniversaire" name="date" [max]="maxDate" ngModel date required #Inputdate="ngModel" >
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    <mat-error *ngIf="Inputdate.hasError('required')"> la date n'est pas valide </mat-error>
+  </mat-form-field>
+  <mat-checkbox name="acceptation" ngModel color="accent">J'accepte les conditions d'utilisation </mat-checkbox>
+  <button  type="submit" mat-raised-button color="accent"  >ajouter</button>
+</form>
+</section>
+

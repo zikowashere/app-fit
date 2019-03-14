@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project-test';
+  Open=false;
+  Training=true;
+  onOpen(){
+    if(this.Open===false)
+    return this.Open=true;
+    if(this.Open===true)
+    return this.Open=false;
+  }
 }

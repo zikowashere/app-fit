@@ -1,0 +1,18 @@
+<mat-nav-list>
+                    
+    <a *ngIf="!isauth" mat-list-item  routerLink="/Sign-up"(click)="Onclose()">
+       <mat-icon> face</mat-icon>
+       <span class="span-nav">Sign-up</span>
+    
+ </a>
+ <a *ngIf="!isauth" mat-list-item   routerLink="/Login"(click)="Onclose()">
+     <mat-icon> vpn_key</mat-icon>
+     <span class="span-nav">Login</span>
+
+ </a>
+ <a *ngIf="isauth" mat-list-item   routerLink="/Training"(click)="Onclose()">
+     <mat-icon> fitness_center</mat-icon>
+     <span class="span-nav">Training</span>
+     
+ </a>
+</mat-nav-list>

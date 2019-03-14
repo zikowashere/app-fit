@@ -1,0 +1,14 @@
+<mat-tab-group *ngIf="!Trainingstart  ">
+    <mat-tab label="New Training"> 
+      <app-new-training (goingStart)="Trainingstart = true" (Fitness)="FitnessStart=true" (musculation)="MusclationStart=true" (Cardio)="CardioStart=true"> </app-new-training>
+       </mat-tab>
+    <mat-tab label="calculer vos calories"> 
+      <app-past-training ></app-past-training>
+       </mat-tab>
+       <mat-tab label="chronometre"> 
+        <app-timer></app-timer>
+         </mat-tab>
+  </mat-tab-group>
+  <app-fitness *ngIf="Trainingstart && FitnessStart"></app-fitness>
+  <app-cardio *ngIf="Trainingstart && CardioStart"></app-cardio>
+  <app-list-exo *ngIf="Trainingstart && MusclationStart "><app-list-exo>

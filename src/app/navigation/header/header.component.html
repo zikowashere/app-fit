@@ -1,0 +1,15 @@
+<mat-toolbar fxLayout="row"  color="accent">
+    <div><mat-icon id ="menub" (click)="Ontoggle()" fxHide.lg fxHide.md>list</mat-icon></div>
+     <div>
+            <li><a id ="a"  routerLink="/"> Application traning</a></li>  
+     </div>
+     
+     <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+         <ul fxLayout fxLayoutGap=10px class="navigation">
+            <li *ngIf="!isauth"><a id ="a"  routerLink="/Sign-up"> Sign-up</a></li> 
+            <li *ngIf="!isauth"><a id ="a"  routerLink="/Login"> Login</a></li> 
+            <li *ngIf="isauth"><a id ="a"  routerLink="/Training">Training</a></li>
+         </ul>
+     </div>
+    
+</mat-toolbar>

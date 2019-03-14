@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+html,body{
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.intro{
+    margin: auto;
+    height: 920px;
+    width: 100%;
+    background: url('https://musculation-nutrition.fr/wp-content/uploads/2016/06/stagner-en-musculation-436x300.png');
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+.intro.inner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+    
+}
+.content{
+    max-width: 1000px;
+    vertical-align: center;
+    margin: 0 auto;
+}
+.content h1{
+    font-family: 'Raleway',sans-serif;
+    vertical-align: middle;
+    color: aliceblue;
+    font-size: 500%;
+    margin: 270px auto;
+}
+.btn {
+    border-radius: 9px;
+    font-family: 'Oswald',sans-serif;
+    color: rgb(233, 219, 27);
+    font-size: 135%;
+    padding: 10px 20px;
+    border: solid darkkhaki 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position:center;
+    vertical-align: center;
+    margin: 350px;
+    
+
+}

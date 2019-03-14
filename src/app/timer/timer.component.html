@@ -1,0 +1,20 @@
+<section fxFlex.xs="100%" fxFlex.md="100%" fxFlex.lg="100%" fxFlex.sm="100%" id="sec" >
+
+  <div id="bar-progress">
+    <mat-progress-bar mode="determinate" [value]="timeLeft"></mat-progress-bar>
+  </div>
+    <div id="change-titre" fxLayoutAlign="center">
+    <h1 id=" titre" *ngIf="titre1">
+      votre progression :{{timeLeft}}%
+    </h1>
+    <h2 id="titre" *ngIf="titre2">
+      vous avez pris une pause 
+   </h2>
+     <h3 *ngIf="titre3"> Go Go Go !!! vous etes presque arrivé </h3>
+    </div >
+<p fxLayoutAlign="center">
+  <button type="submit"    class="btn"  (click)="startTimer()" mat-raised-button color="accent" >start</button>
+  <button type="submit"    class="btn"   (click)="pauseTimer() " mat-raised-button color="accent">pause</button>
+</p>
+
+</section>

@@ -1,0 +1,11 @@
+#text-resultat{
+    height: 100px;
+    width: 400px;
+}
+.lab{
+    padding:30px;
+    display: inline-block;
+}
+.btn{
+    margin-top: 40px;
+}

@@ -1,0 +1,25 @@
+.start-button{
+    
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+}
+.btn{
+    margin-right: 80px;
+    margin-left: 40px;
+    margin: 10px;
+    display: inline;
+}
+#bar-progress{
+ margin: 30px;
+ padding: 50px;
+}
+#id{
+    margin: 30px;
+    padding: 50px;
+}
+#change-titre{
+    padding: 100px;
+    margin: 30px;
+
+}

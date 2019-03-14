@@ -1,0 +1,15 @@
+<section fxFlex="400px" fxLayout ="column" fxLayoutAlign="center center">
+    
+   <h1 class="titre"> Hit Cardio </h1>
+  <youtube-player class="youtube-player" fxFlex="80%" fxLayout="column" fxLayoutAlign="center center"
+  *ngFor="let identif of id1"
+ 
+  [videoId]="identif"
+  (ready)="savePlayer($event)"
+  (change)="onStateChange($event)"
+ 
+> 
+</youtube-player>
+
+
+</section>

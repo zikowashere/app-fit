@@ -1,0 +1,19 @@
+#menub{
+    cursor:pointer;
+}
+#a{
+    text-decoration: none;
+    color: white;
+}
+.navigation{
+    list-style: none;
+}
+#sidebare{
+    background: blueviolet;
+}
+.link{
+    margin: 0%;
+}
+mat-sidenav-content,mat-sidenav,mat-sidenav-container{
+    height: 100%;
+}

@@ -1,0 +1,33 @@
+<section fxFlex.xs="100%" class="sign-up" >
+  <form   class ="form-class" fxLayout="column" fxLayoutAlign="center " #f="ngForm" (ngSubmit)="onSubmit(f)" id="formulaire">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="âge" name="âge" ngModel email required>
+      <mat-error> âge invalid</mat-error>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+      <input  matInput placeholder="poids" name="poids" ngModel password required>
+    <mat-error> poids invalid</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput  placeholder="taille" name="taille" ngModel  required >
+    </mat-form-field>
+    <mat-select placeholder="sexe" name ="sexe" ngModel >
+      <mat-option value='homme'>
+        homme
+      </mat-option>
+      <mat-option value='femme'>
+        femme
+      </mat-option>
+    </mat-select>
+    <button  type="submit" class="btn" mat-raised-button color="accent"(click)="displayCalcul()">calculer votre rapport calorique par journée </button>
+    <label class="lab"> votre rapport de calorie est :  {{calculcalorie}} calories</label>
+
+  
+      
+      
+    
+  </form>
+  </section>
+  
+  
