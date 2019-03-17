@@ -1,5 +1,5 @@
-<section fxFlex.xs="100%" class="login" >
-    <form   class ="form-class" fxLayout="column" fxLayoutAlign="center " #f="ngForm" (ngSubmit)="Signin(f)" id="formulaire">
+<section fxFlex.xs="100%" fxFlex.md="100%" fxLayoutAlign="center" class="login" >
+    <form   class ="form-class" fxLayout="column" fxLayoutAlign="center center " fxLayoutGap="10px" #f="ngForm" (ngSubmit)="Signin(f)" id="formulaire">
       <mat-form-field class="example-full-width">
         <input class="email" matInput placeholder="Email"  name="email" ngModel email required>
         <mat-error> E-mail invalid</mat-error>
@@ -10,6 +10,6 @@
       <mat-error> password invalid</mat-error>
       </mat-form-field>
       <button  class="button-login" type="submit" mat-raised-button color="accent" >se connecter</button>
-       <a href="./Sign-up">vous n'avez pas encore de compte ?</a>
+       <a routerLink="/Sign-up">vous n'avez pas encore de compte ?</a>
     </form>
     </section>
